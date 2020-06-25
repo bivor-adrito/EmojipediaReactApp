@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Card from "./Card";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
 
       <dl className="dictionary">
+        <Card />
         <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
