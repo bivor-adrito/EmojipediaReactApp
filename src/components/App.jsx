@@ -1,11 +1,10 @@
 import React from "react";
+import Header from "./Header";
 
 function App() {
   return (
     <div>
-      <h1>
-        <span>emojipedia</span>
-      </h1>
+      <Header />
 
       <dl className="dictionary">
         <div className="term">
