@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Card from "./Card";
+import emojipedia from "../emojipedia";
 
 function App() {
   return (
@@ -8,7 +9,12 @@ function App() {
       <Header />
 
       <dl className="dictionary">
-        <Card />
+        <Card
+          key={emojipedia[0].key}
+          emoji={emojipedia[0].emoji}
+          name={emojipedia[0].name}
+          meaning={emojipedia[0].meaning}
+        />
         <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
@@ -53,3 +59,13 @@ function App() {
 }
 
 export default App;
+
+// key = {emojipedia.key}
+// emoji = {emojipedia.emoji}
+// name = {emojipedia.name}
+// meaning = {emojipedia.meaning}
+
+// key = {emojipedia[0].key}
+// emoji = {emojipedia[0].emoji}
+// name = {emojipedia[0].name}
+// meaning = {emojipedia[0].meaning}
